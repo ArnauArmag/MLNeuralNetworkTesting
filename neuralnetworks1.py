@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 
 #Testing commit with a comment on image classification model
+#Branch test for merging
 data=keras.datasets.fashion_mnist
 
 (train_images,train_labels),(test_images,test_labels)=data.load_data()
