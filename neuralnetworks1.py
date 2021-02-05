@@ -3,7 +3,7 @@ from tensorflow import keras
 import numpy as np 
 import matplotlib.pyplot as plt 
 
-#Testing commint with a commnet on movie review ml model
+#Testing commit with a comment on image classification model
 data=keras.datasets.fashion_mnist
 
 (train_images,train_labels),(test_images,test_labels)=data.load_data()
