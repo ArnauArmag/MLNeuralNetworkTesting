@@ -7,7 +7,7 @@ cv.imshow('Snake',img)
 '''
 capture=cv.VideoCapture(0)
 counter=0
-
+frames=[]
 while True:
     counter=counter+1
     isTrue, frame=capture.read()
@@ -15,8 +15,12 @@ while True:
     #cv.imshow('Video',frame)
     print(frame.shape)
     #if cv.waitKey(20) & 0xFF==ord('d'):
+    frames.append(frame)
     if cv.waitKey(20) & counter>2:
         break
 
+for i in frames:
+    cv.imshow('Img',i)
+    cv.waitKey(0)
 capture.release()
 cv.destroyAllWindows()
